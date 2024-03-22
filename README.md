@@ -1,8 +1,8 @@
-# ThrowaBall [<img src="https://github.com/JustSleightly/Resources/raw/main/Icons/JSLogo.png" width="30" height="30">](https://vrc.sleightly.dev/ "JustSleightly") [<img src="https://github.com/JustSleightly/Resources/raw/main/Icons/Discord.png" width="30" height="30">](https://discord.sleightly.dev/ "Discord") [<img src="https://github.com/JustSleightly/Resources/raw/main/Icons/GitHub.png" width="30" height="30">](https://github.sleightly.dev/ "Github") [<img src="https://github.com/JustSleightly/Resources/raw/main/Icons/Store.png" width="30" height="30">](https://store.sleightly.dev/ "Store")
+# ThrowaBall [<img src="https://github.com/JustSleightly/Resources/raw/main/Icons/JSLogo.png" width="30" height="30" alt="JustSleightly">](https://vrc.sleightly.dev/ "JustSleightly") [<img src="https://github.com/JustSleightly/Resources/raw/main/Icons/Discord.png" width="30" height="30" alt="Discord">](https://discord.sleightly.dev/ "Discord") [<img src="https://github.com/JustSleightly/Resources/raw/main/Icons/GitHub.png" width="30" height="30" alt="GitHub">](https://github.sleightly.dev/ "Github") [<img src="https://github.com/JustSleightly/Resources/raw/main/Icons/Store.png" width="30" height="30" alt="Store">](https://store.sleightly.dev/ "Store")
 
 [![GitHub stars](https://img.shields.io/github/stars/JustSleightly/ThrowaBall)](https://github.com/JustSleightly/ThrowaBall/stargazers) [![GitHub Tags](https://img.shields.io/github/tag/JustSleightly/ThrowaBall)](https://github.com/JustSleightly/ThrowaBall/tags) [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/JustSleightly/ThrowaBall?include_prereleases)](https://github.com/JustSleightly/ThrowaBall/releases) [![GitHub issues](https://img.shields.io/github/issues/JustSleightly/ThrowaBall)](https://github.com/JustSleightly/ThrowaBall/issues) [![GitHub last commit](https://img.shields.io/github/last-commit/JustSleightly/ThrowaBall)](https://github.com/JustSleightly/ThrowaBall/commits/main) [![Discord](https://img.shields.io/discord/780192344800362506)](https://discord.sleightly.dev/)
 
-![TB Gumroad Showcase gif](TODO)
+![TB Gumroad Showcase gif](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Gifs/TB%20Gumroad%20Showcase.gif)
 
 **ThrowaBall** is a physics-based throwable object system built for **VRChat** users. It streamlines the deceptively difficult task of naturally grabbing and tossing an object with a modular automatic setup tool, allowing for 2 step installation without any VRChat 3.0 or advanced Unity experience whatsoever.
 
@@ -10,7 +10,7 @@ This is a **system** and only includes three default ball prefabs. Please import
 
 ## Available now at [store.sleightly.dev](https://store.sleightly.dev/)
 
-<img src="TODO" height="280">
+<img src="https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Images/TB%20Default%20Settings.png" height="280" alt="TB Default Settings">
 
 ### Features
 
@@ -30,14 +30,14 @@ This is a **system** and only includes three default ball prefabs. Please import
 
 | Specifications | Default | Range |
 | :--- | :--- | :--- |
-| `Memory` | 38 | 2 - 46 |
+| `Memory` | 38 | 2 - 47 |
 | `Icons` | 5 | 3 - 14 |
 | `FX Layers` | 6 | 3 - 7 |
 | `Animation Clips` | 30 | 13 - 40 |
 
 ## Showcase / Performance Reel
 
-[<img src="https://img.youtube.com/vi/TODO/0.jpg" width="410">](TODO "ThrowaBall Showcase")
+[<img src="https://img.youtube.com/vi/TODO/0.jpg" width="410" alt="ThrowaBall Showcase">](https://www.youtube.com/watch?v=TODO "ThrowaBall Showcase")
 
 <details>
 
@@ -45,7 +45,7 @@ This is a **system** and only includes three default ball prefabs. Please import
 ​
 <blockquote>
 
-![TB Script Showcase gif](TODO)
+![TB Script Showcase gif](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Gifs/TB%20Script%20Showcase.gif)
 
 </details>
 
@@ -106,7 +106,7 @@ ThrowaBall will use a PhysBone and configurable joint to determine the force and
 
 ### Unity Installation Guide Video
 
-[![ThrowaBall Unity Installation Guide](http://img.youtube.com/vi/TODO/0.jpg)](TODO "ThrowaBall Unity Installation Guide")
+[![ThrowaBall Unity Installation Guide](http://img.youtube.com/vi/TODO/0.jpg)](https://www.youtube.com/watch?v=TODO "ThrowaBall Unity Installation Guide")
 
 ### Importing The Prefab
 
@@ -148,7 +148,7 @@ If your license key is not working due to it already being in use, click the *Tr
 
 ### Main Settings
 
-![TB Main Settings png](TODO)
+![TB Main Settings png](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Images/TB%20Main%20Settings.png)
 
 <details>
 
@@ -188,7 +188,7 @@ Use the +/- symbol to add/remove additional balls to the system, up to 8 balls. 
 
 Adds +1 Expression Parameter memory per ball.
 
-![TB Ball Add Rearrange gif](TODO)
+![TB Ball Add Rearrange gif](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Gifs/TB%20Ball%20Add%20Rearrange.gif)
 
 <details>
 
@@ -214,7 +214,7 @@ Leaving an input field blank will yield an error.
 
 ### Advanced Options
 
-![TB Advanced Options png](TODO)
+![TB Advanced Options png](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Images/TB%20Advanced%20Options.png)
 
 <details>
 
@@ -224,11 +224,11 @@ Leaving an input field blank will yield an error.
 
 Enabling/Disabling this option will enable/disable Write Defaults in all generated animator states for ThrowaBall.
 
-![TB Write Defaults png](TODO)
+![TB Write Defaults png](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Images/TB%20Write%20Defaults.png)
 
 If it says Write Defaults **(Auto)**, then this is handled automatically to match the current Write Defaults of your Animator Controller(s).
 
-![TB Write Defaults Auto png](TODO)
+![TB Write Defaults Auto png](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Images/TB%20Write%20Defaults%20Auto.png)
 
 <details>
 
@@ -562,7 +562,7 @@ The system will be generated under the same existing ThrowaBall root, and animat
 
 This option is only available if an existing instance of ThrowaBall is already detected.
 
-![TB Additional System png](TODO)
+![TB Additional System png](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Images/TB%20Additional%20System.png)
 
 </details>
 
@@ -589,7 +589,7 @@ Displays the Required Memory to generate and the Available Memory on the current
 <blockquote>
 
 ```math
-\Sigma TotalRequiredMemory = CustomBallMemory + \begin{cases}1 + BallCount \\8 & IncludeForceSlider \\1 & IncludeMenuRespawn \\27 & IncludeBallSyncing\|\|UseForceParticle \\1 & IncludeSyncToggle\&AllowRemoteGrabbing\&!UseForceParticle\end{cases}
+\Sigma TotalRequiredMemory = CustomBallMemory + \begin{cases}1 + BallCount \\8 & IncludeForceSlider \\1 & IncludeMenuRespawn \\27 & IncludeBallSyncing\|\|UseForceParticle \\1 & IncludeSyncToggle\&AllowRemoteGrabbing\&!UseForceParticle \\1 & IncludeCollisionParameter\end{cases}
 ```
 
 </details>
@@ -870,7 +870,7 @@ The Pedestal will always maintain a flat rotation on the XZ plane, and have its 
 
 Show/Hide the Position/Rotation handles as necessary.
 
-![TB Edit Pedestal gif](TODO)
+![TB Edit Pedestal gif](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Gifs/TB%20Edit%20Pedestal.gif)
 
 </details>
 
@@ -888,7 +888,7 @@ Enable **Edit Individual Target Offsets per Ball** in order to adjust the ball t
 
 Show/Hide the Position/Rotation handles as necessary.
 
-![TB Edit Ball Target gif](TODO)
+![TB Edit Ball Target gif](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Gifs/TB%20Edit%20Ball%20Target.gif)
 
 </details>
 
@@ -906,7 +906,7 @@ Show/Hide the Scale/Radius handles as necessary.
 
 If you're using Unity 2019, using the center scale handle when the scale is not (1, 1, 1) will exponentially snap initially due to a [Unity 2019 bug](https://forum.unity.com/threads/case-1264038-handles-scalehandle-incorrect-when-center-scaling.933798/), but it can still be used to uniformly scale across all axes.
 
-![TB Edit Ball Size gif](TODO)
+![TB Edit Ball Size gif](https://github.com/JustSleightly/ThrowaBall/raw/main/Documentation/Gifs/TB%20Edit%20Ball%20Size.gif)
 
 </details>
 
@@ -940,7 +940,7 @@ Once **Positioning/Scaling** is finished, click **Complete Setup** to generate a
 
 ### In-Game Usage Tutorial Video
 
-[![ThrowaBall In-Game Usage Tutorial](http://img.youtube.com/vi/TODO/0.jpg)](TODO "ThrowaBall In-Game Usage Tutorial")
+[![ThrowaBall In-Game Usage Tutorial](http://img.youtube.com/vi/TODO/0.jpg)](https://www.youtube.com/watch?v=TODO "ThrowaBall In-Game Usage Tutorial")
 
 To start using ThrowaBall in game, use the `Toggle` menu to select a ball to make visible, then use `Enable` to initialize the system. Once initialized, the ball should be grabbable via controller grip, as it uses PhysBones to hold rather than gestures.
 
