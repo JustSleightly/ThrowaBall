@@ -37,7 +37,7 @@ This is a **system** and only includes three default ball prefabs. Please import
 
 ## Showcase / Performance Reel
 
-[<img src="https://img.youtube.com/vi/TODO/0.jpg" width="410" alt="ThrowaBall Showcase">](https://www.youtube.com/watch?v=TODO "ThrowaBall Showcase")
+[![ThrowaBall Showcase](http://img.youtube.com/vi/EraEE1VhGl4/0.jpg)](https://www.youtube.com/watch?v=EraEE1VhGl4 "ThrowaBall Showcase")
 
 <details>
 
@@ -67,7 +67,7 @@ This is a **system** and only includes three default ball prefabs. Please import
 
 ThrowaBall is a unique throwable system as it is designed to **both** sync its position to other players, **and** allow other players to throw the object.
 
-However, due to limitations with VRChat regarding the way player IK interpolates and delays between player clients, it leads to a sub-par/delayed throwing experience for players other than the avatar wearer who attempt to throw ThrowaBall.
+However, due to limitations with VRChat regarding the way player IK interpolates and delays between player clients, it leads to a sub-par/delayed throwing experience for players other than the avatar wearer who attempt to throw ThrowaBall. Throwing experience also deteriorates in accuracy at lower FPS.
 
 The **Include Remote Tracker** option in the ThrowaBall installer adds complexity to the hierarchy and animator in an attempt to partially mitigate the delay in player IK, but it is far from a robust solution.
 
@@ -86,6 +86,7 @@ ThrowaBall supports two different throwing mechanics to choose from to suit your
 ThrowaBall will use particle system collision to determine the force of the throw. The thrown object is still a rigidbody with physics collision, and not a particle mesh.
 
 - **Feels more consistent/stable for the average user**
+- **Less sensitive to throwing effort, so small tosses still travel well**
 - **Properly scales linearly with VRChat Avatar Scaling**
 - *Including Sync is mandatory (+27 memory) and can't be toggled*
 - *Ball will not rotate for other players*
@@ -94,6 +95,7 @@ ThrowaBall will use particle system collision to determine the force of the thro
 
 ThrowaBall will use a PhysBone and configurable joint to determine the force and direction of the throw.
 
+- **More sensitive to throwing effort, resulting in a more dynamic range**
 - **Including Sync is optional if other users do not need to see where the ball lands (-27 memory)**
 - **Sync can be toggled off in-game to allow other users to throw ThrowaBall without any visual delay as if they were the original wearer**
 - **Ball will rotate to face the direction of its travel**
@@ -106,7 +108,7 @@ ThrowaBall will use a PhysBone and configurable joint to determine the force and
 
 ### Unity Installation Guide Video
 
-[![ThrowaBall Unity Installation Guide](http://img.youtube.com/vi/TODO/0.jpg)](https://www.youtube.com/watch?v=TODO "ThrowaBall Unity Installation Guide")
+[![ThrowaBall Unity Installation Guide](http://img.youtube.com/vi/1Ae--qTr0oU/0.jpg)](https://www.youtube.com/watch?v=1Ae--qTr0oU "ThrowaBall Unity Installation Guide")
 
 ### Importing The Prefab
 
@@ -255,6 +257,8 @@ States with BlendTrees that are also set to Write Defaults On and have `(WD On)`
 Enable this feature to add an animator parameter called `TB/Collision` that will be driven whenever the thrown object collides with a surface for use with custom animations.
 
 The collision detection is not foolproof or perfect, as it depends on world colliders and the detection rate of particle collision death. The parameter fires for a minimum of 10 frames at a time.
+
+Adds +1 Expression Parameter memory.
 
 </details>
 
@@ -940,7 +944,7 @@ Once **Positioning/Scaling** is finished, click **Complete Setup** to generate a
 
 ### In-Game Usage Tutorial Video
 
-[![ThrowaBall In-Game Usage Tutorial](http://img.youtube.com/vi/TODO/0.jpg)](https://www.youtube.com/watch?v=TODO "ThrowaBall In-Game Usage Tutorial")
+[![ThrowaBall In-Game Usage Tutorial](http://img.youtube.com/vi/TjH0JU1dnjw/0.jpg)](https://www.youtube.com/watch?v=TjH0JU1dnjw "ThrowaBall In-Game Usage Tutorial")
 
 To start using ThrowaBall in game, use the `Toggle` menu to select a ball to make visible, then use `Enable` to initialize the system. Once initialized, the ball should be grabbable via controller grip, as it uses PhysBones to hold rather than gestures.
 
@@ -1133,6 +1137,8 @@ Each reparented GameObject will have its name modified to include the index of t
 
 *If you have any questions about this API, or would like to develop for this API but don't own ThrowaBall, feel free to reach out to me!*
 
+**For example API packages such as the Follower Fetch demo from the showcase, [check out the Sample folder](https://github.com/JustSleightly/ThrowaBall/tree/main/Sample).**
+
 ---
 
 # Frequently Asked Questions
@@ -1188,7 +1194,9 @@ Make sure your Avatar is uploaded at world origin (0,0,0 Position and Rotation)!
 
 Make sure you have syncing installed/enabled (automatically included for `Force Particle` throw mode), and make sure ThrowaBall is enabled from the menu while standing still.
 
-The syncing accuracy may not be perfectly accurate, but should be within a 0.1 meter tolerance.
+When respawning the ball using the physical button, try to keep the button pressed for longer than a split second to ensure it respawns for all other players.
+
+The syncing accuracy may not be perfectly accurate, but should be within a 0.2 meter tolerance within an effective range of 50 meters from the location the system is enabled.
 
 The ball movement is also interpolated for remote players due to parameter sync rate, so the peaks/valleys of bounces/collisions may be clipped.
 
